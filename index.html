@@ -1,0 +1,28 @@
+---
+title: Home
+---
+
+<h4 class="uk-heading-line"><span>About me</span></h4>
+<span class="uk-text">I'm a Ph.D. student working in the <a class="uk-link-muted" href="https://www.cgmi.uni-konstanz.de/" target="_blank">Visual Computing</a> group of Prof. Deussen at the University of Konstanz. My area of research is information visualization, with a focus on visualization of uncertainty. I'm curious to work on challenging problems and understand their theoretical and mathematical foundations.</span>
+
+$if(posts)$
+<h4 class="uk-heading-line"><span>µBlog</span></h4>
+$partial("templates/post-list.html")$
+
+…or you can find more in the <a href="/archive.html">archives</a>.
+$endif$
+
+<h4 class="uk-heading-line"><span>CV</span></h4>
+$partial("templates/cv-list.html")$
+
+<h4 class="uk-heading-line"><span>Publications</span></h4>
+$partial("templates/publication-list.html")$
+
+<h4 class="uk-heading-line"><span>Misc</span></h4>
+<p class="uk-text">When I'm not spending time with my family or working, you often find me with friends in the mountains going backcountry skiing or climbing. I also enjoy traveling and exploring new places. Below are some photos that I took along the way.</p>
+<div class="uk-flex uk-flex-center@s">
+  <div><img data-src="images/ny.jpg" alt="Manhattan skyline from Brooklyn Bridge" uk-img></div>
+  <div class="uk-margin-left"><img data-src="images/stein.jpg" alt="Skitouring in the Swiss alps" uk-img></div>
+  <div class="uk-margin-left"><img data-src="images/qingdao.jpg" alt="Lighthouse in Qingdao" uk-img></div>
+  <div class="uk-margin-left"><img data-src="images/zimba.jpg" alt="View of the Austrian alps" uk-img></div>
+</div>

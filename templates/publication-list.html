@@ -1,0 +1,12 @@
+<ul class="uk-list uk-list-divider">
+    $for(publications)$
+      <li>
+        <div>
+          <div><span class="uk-text">$title$</span></div>
+          <div><span class="uk-text uk-text-small">$author$</span></div>
+          <div><span class="uk-text-small">$published$ ($year$)</span></div>
+          <div>$partial("templates/doi.html")$</div>
+        </div>
+      </li>
+    $endfor$
+</ul>

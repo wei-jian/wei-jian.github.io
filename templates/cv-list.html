@@ -1,0 +1,13 @@
+<ul class="uk-list uk-list-divider">
+    $for(cvEntries)$
+      <li>
+        <div uk-grid>
+          <div class="uk-width-1-6"><span class="uk-text-small">$start$-$if(end)$$end$$else$now$endif$</span></div>
+          <div class="uk-width-expand">
+            <div>$what$ <span class="uk-text-meta">// $where$</span></div>
+            <div><span class="uk-text-small">$desc$</span></div>
+          </div>
+        </div>
+      </li>
+    $endfor$
+</ul>
