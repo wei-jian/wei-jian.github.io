@@ -1,4 +1,5 @@
-language: haskell
+# Use c since we provide own build tools
+language: c
 dist: trusty
 sudo: false
 
@@ -11,6 +12,8 @@ branches:
 
 cache:
   directories:
+    - $HOME/.ghc
+    - $HOME/.cabal
     - $HOME/.stack
 
 before_install:
