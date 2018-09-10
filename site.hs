@@ -6,6 +6,10 @@ import Hakyll
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
+    match "README.md" $ do
+        route   idRoute
+        compile copyFileCompiler
+        
     match "CNAME" $ do
         route   idRoute
         compile copyFileCompiler
