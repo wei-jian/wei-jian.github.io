@@ -1,5 +1,5 @@
 # grtlr.github.io
-Personal webpage including CV and publications.
+Personal webpage including CV and publications. You can find my website at: https://www.jgoertler.com
 
 ## Development
 
