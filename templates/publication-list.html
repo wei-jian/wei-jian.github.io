@@ -5,7 +5,8 @@
           <div><span class="uk-text">$title$</span></div>
           <div><span class="uk-text uk-text-small">$author$</span></div>
           <div><span class="uk-text-small">$published$ ($year$)</span></div>
-          <div>$partial("templates/doi.html")$</div>
+          $if(doi)$<div>$partial("templates/doi.html")$</div>$endif$
+          $if(outlink)$<div>$partial("templates/link.html")$</div>$endif$
         </div>
       </li>
     $endfor$
