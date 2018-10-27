@@ -2,11 +2,17 @@
     $for(publications)$
       <li>
         <div>
-          <div><span class="uk-text">$title$</span></div>
+          <div><span class="uk-text" style="font-family:'IBM Plex Serif';">$title$</span></div>
+          <div><span class="uk-text-small uk-text-muted">$published$ ($year$)</span></div>
           <div><span class="uk-text uk-text-small">$author$</span></div>
-          <div><span class="uk-text-small">$published$ ($year$)</span></div>
-          $if(doi)$<div>$partial("templates/doi.html")$</div>$endif$
-          $if(outlink)$<div>$partial("templates/link.html")$</div>$endif$
+          <div class="uk-flex uk-flex-wrap">
+            $if(doi)$<div>$partial("templates/doi.html")$</div>$endif$
+            $if(outlink)$<div>$partial("templates/link.html")$</div>$endif$
+            $if(award)$<div class="uk-margin-left">$partial("templates/award.html")$</div>$endif$
+            $if(pdf)$<div class="uk-margin-left">$partial("templates/pdf.html")$</div>$endif$
+            $if(code)$<div class="uk-margin-left">$partial("templates/code.html")$</div>$endif$
+            $if(talk)$<div class="uk-margin-left">$partial("templates/talk.html")$</div>$endif$
+          </div>
         </div>
       </li>
     $endfor$

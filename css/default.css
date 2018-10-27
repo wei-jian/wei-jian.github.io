@@ -1,5 +1,13 @@
 body {
-    font-family: 'Source Sans Pro';
+    font-family: 'IBM Plex Sans';
+}
+
+h2 {
+    font-family: 'IBM Plex Sans';
+}
+
+h4 {
+    font-family: 'IBM Plex Sans';
 }
 
 #header-portrait {

@@ -18,6 +18,10 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "documents/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "static/**" $ do
         route   idRoute
         compile copyFileCompiler
