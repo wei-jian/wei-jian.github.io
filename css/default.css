@@ -14,3 +14,9 @@ h4 {
     border-radius: 50%;
     border: 1px solid #e5e5e5;
 }
+
+.thumbnail {
+    border-radius: 4%;
+    border: 1px solid #e5e5e5;
+    filter: opacity(0.9);
+}

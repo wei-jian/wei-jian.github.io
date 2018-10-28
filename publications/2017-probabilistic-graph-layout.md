@@ -6,4 +6,5 @@ year: 2017
 doi: 10.1109/tvcg.2016.2598919
 talk: 'https://vimeo.com/227577765'
 pdf: 'documents/2017-probabilistic-graph-layout.pdf'
+thumbnail: 'images/thumbnails/2017-probabilistic-graph-layout.png'
 ---
