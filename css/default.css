@@ -6,6 +6,10 @@ h2 {
     font-family: 'IBM Plex Sans';
 }
 
+h3 {
+    font-family: 'IBM Plex Sans';
+}
+
 h4 {
     font-family: 'IBM Plex Sans';
 }
@@ -16,7 +20,11 @@ h4 {
 }
 
 .thumbnail {
-    border-radius: 4%;
+    border-radius: 8%;
     border: 1px solid #e5e5e5;
     filter: opacity(0.9);
+}
+
+#content div.uk-section:nth-child(odd) {
+    background-color: #fafaff;
 }
