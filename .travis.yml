@@ -26,6 +26,9 @@ script:
   - stack build
   - stack exec site build
 
+before_deploy:
+  - cp README.md _site/
+
 deploy:
   provider: pages
   github_token: $GITHUB_TOKEN
