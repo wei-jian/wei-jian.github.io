@@ -1,32 +1,387 @@
----
-title: Home
----
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Jochen Görtler - Research in information visualization</title>
+        <meta name="keywords" content="jochen görtler, jochen goertler, uncertainty visualization, publications, research, visualization, uncertainty, bubble treemaps" />
+        <meta name="description" content="Personal webpage of Jochen Görtler, information visualization researcher at the University of Konstanz interested in handling uncertainty throughout the visual computing pipeline." />
 
-<div class="uk-section uk-section-default">
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="static/icon-196x196.png">
+        <link rel="shortcut icon" sizes="196x196" href="static/icon-196x196.png">
+        <link rel="apple-touch-icon" href="static/icon-196x196.png">    
+        <link rel="icon" sizes="196x196" href="static/icon-196x196.png">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Sans">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM Plex Serif">
+        
+        <!-- UIkit -->
+        <link rel="stylesheet" href="./css/uikit.min.css" />
+        <script src="./static/js/uikit.min.js"></script>
+        <script src="./static/js/uikit-icons.min.js"></script>
+
+        <!-- Own files -->
+        <link rel="stylesheet" type="text/css" href="./css/default.css">
+    </head>
+    <body>
+            <header>
+                <div class="uk-container uk-margin-top uk-text-center"><h2>Jochen Görtler</h2></div>
+                <div class="uk-container uk-text-center"><a href="./"><img id="header-portrait" data-src="./images/portrait.png" width="100" height="auto" alt="Portrait" uk-img></a></div>
+                <div class="uk-flex uk-flex-center uk-margin-bottom">
+                  <div class="uk-grid-collapse  uk-text-center" uk-grid>
+                    <div class="uk-padding-small"><a href="mailto:info@jgoertler.com" target="_blank"><span class="uk-icon" uk-icon="icon: mail"></span> Mail</a></div>
+                    <div class="uk-padding-small"><a href="https://www.github.com/grtlr" target="_blank"><span class="uk-icon" uk-icon="icon: github-alt"></span> Github</a></div>
+                    <div class="uk-padding-small"><a href="https://www.cgmi.uni-konstanz.de/personen/wissenschaftliche-mitarbeiterinnen/jochen-goertler/" target="_blank"><span class="uk-icon" uk-icon="icon: location"></span> University of Konstanz</a></div>
+                    <div class="uk-padding-small"><a href="https://scholar.google.de/citations?user=PjRS0WAAAAAJ" target="_blank"><span class="uk-icon" uk-icon="icon: google"></span> Google Scholar</a></div>
+                    <div class="uk-padding-small"><a href="https://linkedin.com/in/jgoertler" target="_blank"><span class="uk-icon" uk-icon="icon: linkedin"></span> LinkedIn</a></div>
+                    <div class="uk-padding-small"><a href="https://twitter.com/_jgoertler" target="_blank"><span class="uk-icon" uk-icon="icon: twitter"></span> _jgoertler</a></div>
+                  </div>
+                </div>
+            </header>
+            <main role="main">
+              <div id="content">
+                <div class="uk-section uk-section-default">
 <div class="uk-container uk-container-small">
 <h3>About me</h3>
 <span class="uk-text">I'm a Ph.D. student working in the <a class="uk-link-muted" href="https://www.cgmi.uni-konstanz.de/" target="_blank">Visual Computing</a> group at the University of Konstanz. My area of research is information visualization, with a focus on visualization of uncertainty. I'm curious to work on challenging problems and understand their theoretical and mathematical foundations. Lately I have been working on visualizations that help us understand machine learning algorithms.</span>
 </div>
 </div>
 
-$if(posts)$
-<h4 class="uk-heading-line"><span>µBlog</span></h4>
-$partial("templates/post-list.html")$
 
-…or you can find more in the <a href="/archive.html">archives</a>.
-$endif$
 
 <div class="uk-section uk-section-default">
 <div class="uk-container uk-container-small">
 <h3>CV</h3>
-$partial("templates/cv-list.html")$
+<ul class="uk-list uk-list-divider">
+    
+      <li>
+        <div uk-grid>
+          <div class="uk-width-1-6">
+              <div class="uk-flex uk-flex-wrap uk-text-small">
+                  <span class="uk-text-small">2016</span>
+                  <span>&mdash;</span>
+                  <span>now</span>
+              </div>
+          </div>
+          <div class="uk-width-expand">
+            <div>Ph.D. in Computer Science</div>
+            <div><span class="uk-text-meta">Visual Computing Group - Prof. Deussen, University of Konstanz</span></div>
+            <div><span class="uk-text-small">Topic: Uncertainty Quantification and Analysis in Visual Computing</span></div>
+          </div>
+        </div>
+      </li>
+    
+      <li>
+        <div uk-grid>
+          <div class="uk-width-1-6">
+              <div class="uk-flex uk-flex-wrap uk-text-small">
+                  <span class="uk-text-small">06/2019</span>
+                  <span>&mdash;</span>
+                  <span>now</span>
+              </div>
+          </div>
+          <div class="uk-width-expand">
+            <div>Visiting Researcher</div>
+            <div><span class="uk-text-meta">Visualization Design Lab - Prof. Lex, Scientific Computing and Imaging Institute, University of Utah</span></div>
+            <div><span class="uk-text-small">Understanding the users intent when interacting with visualizations.</span></div>
+          </div>
+        </div>
+      </li>
+    
+      <li>
+        <div uk-grid>
+          <div class="uk-width-1-6">
+              <div class="uk-flex uk-flex-wrap uk-text-small">
+                  <span class="uk-text-small">2012</span>
+                  <span>&mdash;</span>
+                  <span>2015</span>
+              </div>
+          </div>
+          <div class="uk-width-expand">
+            <div>M.Sc. <u>with distinction</u> in Computer Science</div>
+            <div><span class="uk-text-meta">Karlsruhe Institute of Technology</span></div>
+            <div><span class="uk-text-small">Specialization: Cognitive Systems, Robotics & Automation<br> Thesis: Superpixels for identifying structures in laparoscopic surgery</span></div>
+          </div>
+        </div>
+      </li>
+    
+      <li>
+        <div uk-grid>
+          <div class="uk-width-1-6">
+              <div class="uk-flex uk-flex-wrap uk-text-small">
+                  <span class="uk-text-small">02/2014</span>
+                  <span>&mdash;</span>
+                  <span>07/2014</span>
+              </div>
+          </div>
+          <div class="uk-width-expand">
+            <div>Voluntary Internship</div>
+            <div><span class="uk-text-meta">KUKA Laboratories GmbH</span></div>
+            <div><span class="uk-text-small">Efficient C++ implementation of a RANSAC-based algorithm for object recognition in point-clouds. Automation of the build process for external libraries in a cross-platform environment using CMake.</span></div>
+          </div>
+        </div>
+      </li>
+    
+      <li>
+        <div uk-grid>
+          <div class="uk-width-1-6">
+              <div class="uk-flex uk-flex-wrap uk-text-small">
+                  <span class="uk-text-small">2008</span>
+                  <span>&mdash;</span>
+                  <span>2012</span>
+              </div>
+          </div>
+          <div class="uk-width-expand">
+            <div>B.Sc. in Computer Science</div>
+            <div><span class="uk-text-meta">Karlsruhe Institute of Technology</span></div>
+            <div><span class="uk-text-small">Thesis: Visualization concept for laparoscopy using augmented reality</span></div>
+          </div>
+        </div>
+      </li>
+    
+</ul>
+
 </div>
 </div>
 
 <div class="uk-section uk-section-default">
 <div class="uk-container uk-container-small">
 <h3>Publications</h3>
-$partial("templates/publication-list.html")$
+<ul class="uk-list uk-list-divider">
+    
+      <li>
+        <div class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand">
+            <div><span class="uk-text" style="font-family:'IBM Plex Serif';">Uncertainty-Aware Principal Component Analysis</span></div>
+            <div><span class="uk-text-small uk-text-muted">IEEE Transactions on Visualization and Computer Graphics (to appear) (2020)</span></div>
+            <div><span class="uk-text uk-text-small">J Görtler, T Spinner, D Streeb, D Weiskopf, O Deussen</span></div>
+            <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
+              
+              <div><a href="https://arxiv.org/abs/1905.01127" target="_blank"><span class="uk-text-small"><span uk-icon="icon: world; ratio: 0.7"></span> arXiv:1905.01127</span></a>
+</div>
+              
+              
+              <div><a href="documents/2020-uncertainty-aware-pca.pdf" target="_blank"><span class="uk-text-small"><span uk-icon="icon: copy; ratio: 0.7"></span> Paper</span></a>
+</div>
+              
+              
+            </div>
+          </div>
+          
+          <div><img class="thumbnail" data-src="images/thumbnails/2020-uncertainty-aware-pca.png" alt="Uncertainty-Aware Principal Component Analysis" width="100" height="100" uk-img>
+</div>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand">
+            <div><span class="uk-text" style="font-family:'IBM Plex Serif';">A Visual Exploration of Gaussian Processes (Extended Version)</span></div>
+            <div><span class="uk-text-small uk-text-muted">Distill.pub (2019)</span></div>
+            <div><span class="uk-text uk-text-small">J Görtler, R Kehlbeck, O Deussen</span></div>
+            <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
+              <div><a href="https://doi.org/10.23915/distill.00017" target="_blank"><span class="uk-text-small"><span uk-icon="icon: world; ratio: 0.7"></span> 10.23915/distill.00017</span></a>
+</div>
+              
+              <div><a href="https://distill.pub/2019/visual-exploration-gaussian-processes/" target="_blank"><span class="uk-text-small"><span uk-icon="icon: link; ratio: 0.7"></span> Link</span></a>
+</div>
+              
+              
+              <div><a href="https://github.com/distillpub/post--visual-exploration-gaussian-processes" target="_blank"><span class="uk-text-small"><span uk-icon="icon: code; ratio: 0.7"></span> Code</span></a>
+</div>
+              
+            </div>
+          </div>
+          
+          <div><img class="thumbnail" data-src="images/thumbnails/2019-visual-exploration-gaussian-processes.png" alt="A Visual Exploration of Gaussian Processes (Extended Version)" width="100" height="100" uk-img>
+</div>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand">
+            <div><span class="uk-text" style="font-family:'IBM Plex Serif';">Stippling of 2D Scalar Fields</span></div>
+            <div><span class="uk-text-small uk-text-muted">IEEE Transactions on Visualization and Computer Graphics 25 (6): 2193-2204 (2019)</span></div>
+            <div><span class="uk-text uk-text-small">J Görtler, M Spicker, C Schulz, D Weiskopf, O Deussen</span></div>
+            <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
+              <div><a href="https://doi.org/10.1109/TVCG.2019.2903945" target="_blank"><span class="uk-text-small"><span uk-icon="icon: world; ratio: 0.7"></span> 10.1109/TVCG.2019.2903945</span></a>
+</div>
+              
+              
+              <div><span class="uk-text-small uk-text-success"><span uk-icon="icon: star; ratio: 0.7"></span> PacificVis 2019 Best Paper</span>
+</div>
+              <div><a href="documents/2019-stippling-2d-scalar-fields.pdf" target="_blank"><span class="uk-text-small"><span uk-icon="icon: copy; ratio: 0.7"></span> Paper</span></a>
+</div>
+              <div><a href="https://observablehq.com/@grtlr/stippling-of-2d-scalar-fields" target="_blank"><span class="uk-text-small"><span uk-icon="icon: code; ratio: 0.7"></span> Code</span></a>
+</div>
+              
+            </div>
+          </div>
+          
+          <div><img class="thumbnail" data-src="images/thumbnails/2019-stippling-2d-scalar-fields.png" alt="Stippling of 2D Scalar Fields" width="100" height="100" uk-img>
+</div>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand">
+            <div><span class="uk-text" style="font-family:'IBM Plex Serif';">A Visual Exploration of Gaussian Processes</span></div>
+            <div><span class="uk-text-small uk-text-muted">Proceedings of the Workshop on Visualization for AI Explainability (VISxAI) (2018)</span></div>
+            <div><span class="uk-text uk-text-small">J Görtler, R Kehlbeck, O Deussen</span></div>
+            <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
+              
+              
+              <div><a href="https://www.jgoertler.com/visual-exploration-gaussian-processes/" target="_blank"><span class="uk-text-small"><span uk-icon="icon: link; ratio: 0.7"></span> Link</span></a>
+</div>
+              <div><span class="uk-text-small uk-text-success"><span uk-icon="icon: star; ratio: 0.7"></span> Best Submission Honorable Mention</span>
+</div>
+              
+              
+              
+            </div>
+          </div>
+          
+          <div><img class="thumbnail" data-src="images/thumbnails/2018-visual-exploration-gaussian-processes.png" alt="A Visual Exploration of Gaussian Processes" width="100" height="100" uk-img>
+</div>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand">
+            <div><span class="uk-text" style="font-family:'IBM Plex Serif';">Towards an Interpretable Latent Space</span></div>
+            <div><span class="uk-text-small uk-text-muted">Proceedings of the Workshop on Visualization for AI Explainability (VISxAI) (2018)</span></div>
+            <div><span class="uk-text uk-text-small">T Spinner, J Körner, J Görtler, O Deussen</span></div>
+            <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
+              
+              
+              <div><a href="https://spinthil.github.io/towards-an-interpretable-latent-space/" target="_blank"><span class="uk-text-small"><span uk-icon="icon: link; ratio: 0.7"></span> Link</span></a>
+</div>
+              
+              
+              
+              
+            </div>
+          </div>
+          
+          <div><img class="thumbnail" data-src="images/thumbnails/2018-towards-interpretable-latent-space.png" alt="Towards an Interpretable Latent Space" width="100" height="100" uk-img>
+</div>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand">
+            <div><span class="uk-text" style="font-family:'IBM Plex Serif';">Bubble Treemaps for Uncertainty Visualization</span></div>
+            <div><span class="uk-text-small uk-text-muted">IEEE Transactions on Visualization and Computer Graphics 24 (1): 719-728 (2018)</span></div>
+            <div><span class="uk-text uk-text-small">J Görtler, C Schulz, D Weiskopf, O Deussen</span></div>
+            <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
+              <div><a href="https://doi.org/10.1109/tvcg.2017.2743959" target="_blank"><span class="uk-text-small"><span uk-icon="icon: world; ratio: 0.7"></span> 10.1109/tvcg.2017.2743959</span></a>
+</div>
+              
+              
+              
+              <div><a href="documents/2018-bubble-treemaps.pdf" target="_blank"><span class="uk-text-small"><span uk-icon="icon: copy; ratio: 0.7"></span> Paper</span></a>
+</div>
+              <div><a href="https://github.com/grtlr/bubble-treemaps" target="_blank"><span class="uk-text-small"><span uk-icon="icon: code; ratio: 0.7"></span> Code</span></a>
+</div>
+              <div><a href="https://vimeo.com/238315152" target="_blank"><span class="uk-text-small"><span uk-icon="icon: album; ratio: 0.7"></span> Talk</span></a>
+</div>
+            </div>
+          </div>
+          
+          <div><img class="thumbnail" data-src="images/thumbnails/2018-bubble-treemaps.png" alt="Bubble Treemaps for Uncertainty Visualization" width="100" height="100" uk-img>
+</div>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand">
+            <div><span class="uk-text" style="font-family:'IBM Plex Serif';">Probabilistic Graph Layout for Uncertain Network Visualization</span></div>
+            <div><span class="uk-text-small uk-text-muted">IEEE Transactions on Visualization and Computer Graphics, 23(1): 531-540 (2017)</span></div>
+            <div><span class="uk-text uk-text-small">C Schulz, A Nocaj, J Görtler, O Deussen, U Brandes, D Weiskopf</span></div>
+            <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
+              <div><a href="https://doi.org/10.1109/tvcg.2016.2598919" target="_blank"><span class="uk-text-small"><span uk-icon="icon: world; ratio: 0.7"></span> 10.1109/tvcg.2016.2598919</span></a>
+</div>
+              
+              
+              
+              <div><a href="documents/2017-probabilistic-graph-layout.pdf" target="_blank"><span class="uk-text-small"><span uk-icon="icon: copy; ratio: 0.7"></span> Paper</span></a>
+</div>
+              
+              <div><a href="https://vimeo.com/227577765" target="_blank"><span class="uk-text-small"><span uk-icon="icon: album; ratio: 0.7"></span> Talk</span></a>
+</div>
+            </div>
+          </div>
+          
+          <div><img class="thumbnail" data-src="images/thumbnails/2017-probabilistic-graph-layout.png" alt="Probabilistic Graph Layout for Uncertain Network Visualization" width="100" height="100" uk-img>
+</div>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand">
+            <div><span class="uk-text" style="font-family:'IBM Plex Serif';">Superpixel-based structure classification for laparoscopic surgery</span></div>
+            <div><span class="uk-text-small uk-text-muted">Medical Imaging: Image-Guided Procedures, Robotic Interventions, and Modeling: 978618 (2016)</span></div>
+            <div><span class="uk-text uk-text-small">S Bodenstedt, J Görtler, M Wagner, H Kenngott, BPM Stich, R Dillmann, S Speidel</span></div>
+            <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
+              <div><a href="https://doi.org/10.1117/12.2216750" target="_blank"><span class="uk-text-small"><span uk-icon="icon: world; ratio: 0.7"></span> 10.1117/12.2216750</span></a>
+</div>
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+          
+          <div><img class="thumbnail" data-src="images/thumbnails/2016-superpixel-classification.png" alt="Superpixel-based structure classification for laparoscopic surgery" width="100" height="100" uk-img>
+</div>
+          
+        </div>
+      </li>
+    
+      <li>
+        <div class="uk-grid-small" uk-grid>
+          <div class="uk-width-expand">
+            <div><span class="uk-text" style="font-family:'IBM Plex Serif';">Context-aware augmented reality in laparoscopic surgery</span></div>
+            <div><span class="uk-text-small uk-text-muted">Computerized Medical Imaging and Graphics, 37(2): 174-182 (2013)</span></div>
+            <div><span class="uk-text uk-text-small">D Katić, AL Wekerle, J Görtler, P Spengler, S Bodenstedt, S Röhl, S Suwelack, HG Kenngott, M Wagner, BP Müller-Stich, R Dillmann, S Speidel</span></div>
+            <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
+              <div><a href="https://doi.org/10.1016/j.compmedimag.2013.03.003" target="_blank"><span class="uk-text-small"><span uk-icon="icon: world; ratio: 0.7"></span> 10.1016/j.compmedimag.2013.03.003</span></a>
+</div>
+              
+              
+              
+              
+              
+              
+            </div>
+          </div>
+          
+          <div><img class="thumbnail" data-src="images/thumbnails/2013-context-aware.png" alt="Context-aware augmented reality in laparoscopic surgery" width="100" height="100" uk-img>
+</div>
+          
+        </div>
+      </li>
+    
+</ul>
+
 </div>
 </div>
 
@@ -42,3 +397,14 @@ $partial("templates/publication-list.html")$
 </div>
 </div>
 </div>
+
+              </div>
+            </main>
+
+        <footer>
+            <div class="uk-background-muted uk-margin-top uk-padding-small uk-text-center">
+              <span class="uk-text-meta">© Jochen Görtler 2018. Site generated using <a href="http://jaspervdj.be/hakyll">Hakyll</a>.</span>
+            </div>
+        </footer>
+    </body>
+</html>
