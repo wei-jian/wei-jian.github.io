@@ -8,6 +8,7 @@
             <div><span class="uk-text uk-text-small">$author$</span></div>
             <div class="uk-flex uk-flex-wrap uk-grid-small" uk-grid>
               $if(doi)$<div>$partial("templates/doi.html")$</div>$endif$
+              $if(arxiv)$<div>$partial("templates/arxiv.html")$</div>$endif$
               $if(outlink)$<div>$partial("templates/link.html")$</div>$endif$
               $if(award)$<div>$partial("templates/award.html")$</div>$endif$
               $if(pdf)$<div>$partial("templates/pdf.html")$</div>$endif$
