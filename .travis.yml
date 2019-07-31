@@ -32,6 +32,7 @@ before_deploy:
 deploy:
   provider: pages
   github_token: $GITHUB_TOKEN
+  keep_history: true
   skip_cleanup: true
   local_dir: _site/
   target-branch: master
