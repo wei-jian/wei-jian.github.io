@@ -30,8 +30,7 @@ deploy:
   provider: pages
   github_token: $GITHUB_TOKEN
   skip_cleanup: true
-  keep-history: true
   local_dir: _site/
-  target-branch: gh-pages
+  target-branch: master
   on:
-    branch: master
+    branch: develop
