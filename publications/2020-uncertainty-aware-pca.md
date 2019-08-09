@@ -6,5 +6,6 @@ year: 2020
 pdf: 'documents/2020-uncertainty-aware-pca.pdf'
 thumbnail: 'images/thumbnails/2020-uncertainty-aware-pca.png'
 arxiv: '1905.01127'
+code: 'https://github.com/grtlr/uapca'
 ---
 
