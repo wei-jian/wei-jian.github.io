@@ -5,7 +5,8 @@ published: 'IEEE Transactions on Visualization and Computer Graphics (to appear)
 year: 2020
 pdf: 'documents/2020-uncertainty-aware-pca.pdf'
 thumbnail: 'images/thumbnails/2020-uncertainty-aware-pca.png'
-arxiv: '1905.01127'
+arxiv: 1905.01127
+doi: 10.1109/tvcg.2019.2934812
 code: 'https://github.com/grtlr/uapca'
 ---
 
